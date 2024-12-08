@@ -33,8 +33,8 @@ function predictOnLoad() {
 let model;
 (async function () {
 	
-	model = await tf.loadModel('http://127.0.0.1:5500/model/model.json'); //เปลี่ยนตรงนี้ 
-	$("#selected-image").attr("src", "http://127.0.0.1:5500/assets/samplepic.jpg"); // กับตรงนี้ 
+	model = await tf.loadModel('http://skin.test.woza.work/final_model_kaggle_version1/model.json');
+	$("#selected-image").attr("src", "http://skin.test.woza.work/assets/samplepic.jpg");
 	
 	// Hide the model loading spinner
 	// This line of html gets hidden:
