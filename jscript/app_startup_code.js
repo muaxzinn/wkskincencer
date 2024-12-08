@@ -33,7 +33,7 @@ function predictOnLoad() {
 let model;
 (async function () {
 	
-	model = await tf.loadModel('http://skin.test.woza.work/final_model_kaggle_version1/model.json');
+	model = await tf.loadModel('https://muaxzinn.github.io/wkskincencer/model/model.json');
 	$("#selected-image").attr("src", "http://skin.test.woza.work/assets/samplepic.jpg");
 	
 	// Hide the model loading spinner
