@@ -33,8 +33,8 @@ function predictOnLoad() {
 let model;
 (async function () {
 	
-	model = await tf.loadModel('http://127.0.0.1:5500/model/model.json'); //เปลี่ยนตรงนี้ 
-	$("#selected-image").attr("src", "http://127.0.0.1:5500/assets/samplepic.jpg"); // กับตรงนี้ 
+	model = await tf.loadModel('https://muaxzinn.github.io/wkskincencer/model/model.json'); //เปลี่ยนตรงนี้ 
+	$("#selected-image").attr("src", "https://muaxzinn.github.io/wkskincencer/assets/samplepic.jpg"); // กับตรงนี้ 
 	
 	// Hide the model loading spinner
 	// This line of html gets hidden:
