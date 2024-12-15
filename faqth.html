@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+<meta charset="utf-8">
+<title>เกี่ยวกับ</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<!--CSS Stylesheets-->
+<link rel="stylesheet" href="css/w3.css">
+<link rel="stylesheet" href="css/woza.css">
+
+<!--Link to Font Awesome icons-->
+<link rel='stylesheet' href='https://use.fontawesome.com/releases/v5.4.2/css/all.css' integrity='sha384-/rXc/GQVaYpyDdyxK+ecHPVYJSN9bmVFBvjA/9eOB+pb3F2w2N6fc5qB9Ew5yIns' crossorigin='anonymous'>
+
+<!--Link to fonts from google fonts-->
+<link href="https://fonts.googleapis.com/css?family=Oswald:300" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+
+<link rel="shortcut icon" type="image/png" href="robotfavicon.png">
+
+</head>
+<body class="bground-color">
+<div style="max-width:1500px">
+<div class="w3-animate-opacity w3-padding w3-margin-bottom bground-color">
+
+<div class='w3-content w3-padding w3-white' style="max-width:960px">
+<div class="w3-center title adjust-fontcolor logo w3-center w3-margin">
+	<img class='w3-round' src="assets/robot.jpg" alt="robot" height='200' width='200'>
+</div>
+
+<div class='w3-center'>
+	<p class="space-letters w3-tag bground-color w3-text-teal w3-border w3-round">
+		<a href="index.html"><i class="fa fa-angle-double-left" style="font-size:20px"></i><b> กลับไปยังหน้าแรก...</b></a>
+	</p>
+</div>
+
+<div class='bottom-margin'>
+<div class='side-margin1 w3-round text-color space-letters w3-margin-bottom'>
+
+<p class='w3-text-pink topp-margin'><b>สถานะการออกแบบ</b></p>
+<p>นี่เป็นต้นแบบ (Prototype)</p>
+
+<p class='w3-text-pink topp-margin'><b>วัตถุประสงค์</b></p>
+<p>เว็บแอปนี้ใช้เทคโนโลยีการมองเห็นด้วยคอมพิวเตอร์ (Computer Vision) เพื่อตรวจหา 3 การวินิจฉัยที่เป็นไปได้มากที่สุดสำหรับแผลที่ผิวหนัง (Skin Lesion) แอปเวอร์ชันขั้นสูงสามารถใช้ในการตรวจหาโรคมะเร็งผิวหนังในระยะแรกได้</p>
+
+<p class='w3-text-pink topp-margin'><b>ประเภทของรอยโรค (Lesion Types)</b></p>
+<p>คำอธิบายต่อไปนี้นำมาจาก <a class="w3-text-blue" href="https://arxiv.org/abs/1803.10417">งานวิจัยนี้</a>:</p>
+
+<p>
+	<b>nv</b><br>
+	<span class="w3-text-teal">ไฝธรรมดา (Melanocytic nevi):</span> 
+	ไฝธรรมดาเกิดจากการเจริญเติบโตผิดปกติของเซลล์เมลาโนไซต์ ซึ่งเป็นเซลล์ที่ผลิตเม็ดสีผิว (เมลานิน) 
+	มีลักษณะหลากหลายตั้งแต่สีอ่อนจนถึงสีเข้ม มักมีลักษณะผิวขรุขระหรือเรียบ 
+	ส่วนใหญ่เป็นลักษณะปกติและไม่มีอันตราย อย่างไรก็ตาม การเปลี่ยนแปลงในขนาด สี หรือรูปร่าง 
+	อาจเป็นสัญญาณของการเกิดโรคอื่นที่ต้องได้รับการตรวจสอบเพิ่มเติม
+
+	<img src="images/nv_ex.jpg" alt="ภาพตัวอย่างของไฝธรรมดา" style="width:100%;max-width:300px; display:block; margin:auto; border-radius:10px; margin-bottom:40px;">
+</p>
+
+<p>
+	<b>mel</b><br>
+	<span class="w3-text-teal">มะเร็งเมลาโนมา (Melanoma):</span> 
+	เป็นมะเร็งผิวหนังที่มีต้นกำเนิดจากเซลล์เมลาโนไซต์ โดยมักพบในบริเวณที่สัมผัสแสงแดดบ่อย 
+	ลักษณะของเมลาโนมาอาจคล้ายกับไฝธรรมดา แต่ขอบเขตจะไม่ชัดเจน 
+	สีไม่สม่ำเสมอ และอาจเปลี่ยนแปลงในขนาดหรือรูปร่างอย่างรวดเร็ว 
+	หากตรวจพบในระยะแรกสามารถรักษาได้โดยการผ่าตัด
+	<span class="w3-text-teal"></spanclass></span> 
+	<img src="images/mel_ex.jpg" alt="ภาพตัวอย่างของมะเร็งเมลาโนมา" style="width:100%;max-width:300px; display:block; margin:auto; border-radius:10px; margin-bottom:40px;">
+</p>
+
+<p>
+	<b>bkl</b><br>
+	<span class="w3-text-teal">กลุ่มรอยโรคเคราโทซิส (Benign Keratosis):</span> 
+	เกิดจากการสะสมของเซลล์ผิวหนังที่สัมผัสแสงแดดเป็นเวลานาน 
+	ลักษณะของรอยโรคอาจเป็นผิวสะเก็ดหรือขรุขระ ส่วนใหญ่มักไม่พัฒนาไปเป็นมะเร็ง 
+	แต่ควรเฝ้าสังเกตการเปลี่ยนแปลง
+	<span class="w3-text-teal"></spanclass></span> 
+	<img src="images/bkl_ex.jpg" alt="ภาพตัวอย่างของเคราโทซิส" style="width:100%;max-width:300px; display:block; margin:auto; border-radius:10px; margin-bottom:40px;">
+</p>
+
+<p>
+	<b>bcc</b><br>
+	<span class="w3-text-teal">มะเร็งเซลล์ฐาน (Basal Cell Carcinoma):</span> 
+	มะเร็งผิวหนังชนิดนี้เกิดจากเซลล์ชั้นฐานของผิวหนัง มักพบในผู้สูงอายุและผู้ที่สัมผัสแสงแดดเป็นประจำ 
+	ถึงแม้จะไม่แพร่กระจายไปยังอวัยวะอื่น แต่สามารถเติบโตและทำลายเนื้อเยื่อรอบข้างได้ 
+	การรักษาโดยทั่วไปคือการผ่าตัด
+	<span class="w3-text-teal"></spanclass></span> 
+	<img src="images/bcc_ex.jpg" alt="ภาพตัวอย่างของมะเร็งเซลล์ฐาน" style="width:100%;max-width:300px; display:block; margin:auto; border-radius:10px; margin-bottom:40px;">
+</p>
+
+<p>
+	<b>akiec</b><br>
+	<span class="w3-text-teal">แผลอักเสบจากแสงแดด (Actinic Keratoses):</span> 
+	เป็นภาวะผิวหนังที่เกิดจากการสัมผัสแสงแดดเป็นเวลานาน 
+	ลักษณะของแผลมักเป็นสะเก็ดหรือพื้นผิวขรุขระ อาจมีสีแดงหรือสีคล้ำ 
+	หากปล่อยไว้โดยไม่รักษา อาจพัฒนาไปสู่มะเร็งผิวหนังได้
+	<span class="w3-text-teal"></spanclass></span> 
+	<img src="images/akiec_ex.jpg" alt="ภาพตัวอย่างของแผลอักเสบจากแสงแดด" style="width:100%;max-width:300px; display:block; margin:auto; border-radius:10px; margin-bottom:40px;">
+</p>
+
+<p>
+	<b>vasc</b><br>
+	<span class="w3-text-teal">รอยโรคหลอดเลือด (Vascular Lesions):</span> 
+	เป็นกลุ่มรอยโรคที่เกี่ยวข้องกับระบบหลอดเลือด เช่น ห้อเลือดหรือรอยโรคหลอดเลือดแดง-ดำ 
+	มีลักษณะเป็นจุดแดงหรือคล้ำ มักไม่เป็นอันตราย แต่ในบางกรณีอาจต้องได้รับการตรวจสอบเพิ่มเติม
+	<span class="w3-text-teal"></spanclass></span> 
+	<img src="images/vasc_ex.jpg" alt="ภาพตัวอย่างของรอยโรคหลอดเลือด" style="width:100%;max-width:300px; display:block; margin:auto; border-radius:10px; margin-bottom:40px;">
+</p>
+
+<p>
+	<b>df</b><br>
+	<span class="w3-text-teal">เนื้องอกชนิดไม่ร้ายแรง (Dermatofibroma):</span> 
+	เกิดจากการตอบสนองของเนื้อเยื่อที่บาดเจ็บ โดยมักพบเป็นก้อนเนื้อเล็กๆ 
+	ที่มีสีคล้ำหรือสีเทา ผิวมักเรียบและไม่เจ็บปวด รอยโรคชนิดนี้ไม่พัฒนาเป็นมะเร็ง
+	<span class="w3-text-teal"></spanclass></span> 
+	<img src="images/df_ex.jpg" alt="ภาพตัวอย่างของเนื้องอกชนิดไม่ร้ายแรง" style="width:100%;max-width:300px; display:block; margin:auto; border-radius:10px; margin-bottom:40px;">
+</p>
+	
+
+<p class='w3-text-pink topp-margin'><b>รูปแบบของภาพที่รองรับ</b></p>
+<p>แอปรองรับรูปภาพในรูปแบบ jpg และ png</p>
+
+
+<hr>
+
+<div class="w3-center title adjust-fontcolor logo w3-center w3-margin">
+<h1 class="space-letters w3-text-pink"><b>คำถามที่พบบ่อย (FAQ)</b></h1>
+</div>
+
+<p class='w3-text-black topp-margin'><b>ฉันต้องรอโหลดโมเดลทุกครั้งที่ใช้แอปหรือไม่?</b></p>
+<p>ไม่ เมื่อโมเดลดาวน์โหลดแล้ว จะถูกเก็บไว้ในหน่วยความจำ</p>
+
+<p class='w3-text-black topp-margin'><b>เรื่องความปลอดภัยของข้อมูลผู้ป่วย?</b></p>
+<p>ภาพที่คุณส่งจะไม่ถูกส่งไปยังเซิร์ฟเวอร์ภายนอก</p>
+
+</div>
+</div>
+</div>
+</div>
+</body>
+</html>
